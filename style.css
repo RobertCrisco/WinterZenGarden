@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Merienda+One");
 h2 h3 h4 {
   font-weight: bold;
   font-family: Helvetica, "Gills Sans", "Trebuchet MS";
@@ -101,6 +101,63 @@ h4 {
   position: relative;
 }
 
+body:before, body:after,
+.intro:before,
+.intro:after {
+  content: "";
+  position: fixed;
+  top: -3000%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.01);
+  background-image: url(images/snow1.png);
+  background-size: 30%;
+  -webkit-animation-name: MOVE-BG;
+  -webkit-animation-duration: 500s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+body:before {
+  filter: blur(6px);
+  opacity: 0.8;
+}
+body:after {
+  filter: blur(1px);
+  top: -1500%;
+  background-image: url(images/snow1.png);
+  background-size: 90%;
+  -webkit-animation-duration: 200s;
+          animation-duration: 200s;
+}
+
+.more-snow:before {
+  filter: blur(4px);
+  opacity: 0.8;
+  top: -2500%;
+  background-size: 60%;
+  -webkit-animation-duration: 400s;
+          animation-duration: 400s;
+}
+.more-snow:after {
+  filter: blur(2px);
+  opacity: 0.8;
+  top: -2000%;
+  background-image: url(images/snow2.png);
+  background-size: 70%;
+  -webkit-animation-duration: 300s;
+          animation-duration: 300s;
+}
+
+@-webkit-keyframes MOVE-BG {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(70%);
+  }
+}
 .intro {
   width: auto;
 }
