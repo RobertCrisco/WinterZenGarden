@@ -101,9 +101,7 @@ h4 {
   position: relative;
 }
 
-body:before, body:after,
-.intro:before,
-.intro:after {
+.intro:before, .intro:after {
   content: "";
   position: fixed;
   top: -3000%;
@@ -223,7 +221,7 @@ footer a.zen-github {
 
 html {
   padding: 0;
-  background-color: #f0f8ff;
+  background-color: #add1eb;
 }
 
 body {
