@@ -28,8 +28,8 @@ a:hover, a:focus {
 }
 
 h1 {
-  background: #483434;
-  color: #fff;
+  background: #d0ced0;
+  color: #6693aa;
   display: inline-block;
   font-weight: normal;
   font-size: 3.2 em;
@@ -41,6 +41,7 @@ h1 {
 h2 {
   display: block;
   position: relative;
+  color: #6693aa;
   font-size: 3.5em;
   letter-spacing: 1px;
   line-height: 1em;
@@ -50,6 +51,7 @@ h2 {
 h3 {
   font-size: 1.8em;
   letter-spacing: 1px;
+  color: #6693aa;
   line-height: 1em;
   padding: 1em 0 0.5em 0;
 }
@@ -72,6 +74,7 @@ h4 {
 
 @media screen and (min-width: 800px) {
   .sidebar {
+    background: transparent url(images/snow.webp);
     margin-left: 600px;
     position: absolute;
     top: 0;
@@ -81,20 +84,7 @@ h4 {
     margin: 0;
     display: block;
     padding: 0.5em 10%;
-    color: #483434;
     text-decoration: none;
-  }
-  .sidebar div.design-selection {
-    background: transparent url(images/sidebardesign.jpg) center/cover;
-  }
-  .sidebar div.design-archives {
-    background: transparent url(images/sidebararchive.jpg) center/cover;
-  }
-  .sidebar div.zen-resources {
-    background: transparent url(images/zenresources.jpg) center/cover;
-  }
-  .design-name {
-    color: red;
   }
   .sidebar ul {
     list-style-type: none;
@@ -102,7 +92,6 @@ h4 {
     font-weight: 600;
   }
   .sidebar li a:link, .sidebar li a:visited {
-    color: #483434;
     font-size: large;
     font-style: bold;
   }
@@ -114,41 +103,36 @@ h4 {
 
 .intro {
   width: auto;
-  background-color: rgb(170, 255, 0);
 }
 
 header h1 {
+  background: transparent url(images/snow.webp);
   display: block;
-  width: 200px;
+  width: 300px;
 }
 
 header {
   padding-top: 20px;
-  background-color: rgb(255, 0, 204);
 }
 
 .summary {
   width: 80%;
   margin: 1 auto;
-  background-color: rgb(255, 217, 0);
 }
 
 .preamble {
   width: 80%;
   margin: 1 auto;
-  background-color: rgb(0, 42, 255);
 }
 
 .main {
   width: 80%;
-  background-color: rgb(45, 107, 87);
 }
 
 footer {
   text-align: center;
   display: flex;
   justify-content: center;
-  background-color: rgb(255, 0, 51);
   margin-bottom: 50px;
 }
 
@@ -182,7 +166,7 @@ footer a.zen-github {
 
 html {
   padding: 0;
-  background-color: #e8e8e8;
+  background-color: #f0f8ff;
 }
 
 body {

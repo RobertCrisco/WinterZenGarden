@@ -8,19 +8,20 @@
 // To use an mixin from the atoms.scss file use the format:  @include atoms.mixinname;
 
 h1 {
-  background: $color-brown;
-  color: $color-white;
+  background: $color-dkgrey;
+  color: $color-deepblue;
   display: inline-block;
   font-weight: normal;
   font-size: 3.2 em;
   padding: 0.5em 1em;
   text-transform: uppercase;
-  border-bottom: none;;
+  border-bottom: none;
 }
 
 h2 {
   display: block;
   position: relative;
+  color: $color-deepblue;
   font-size: 3.5em;
   letter-spacing: 1px;
   line-height: 1em;
@@ -30,6 +31,7 @@ h2 {
 h3 {
   font-size: 1.8em;
     letter-spacing: 1px;
+    color: $color-deepblue;
   line-height: 1em;
   padding: 1em 0 0.5em 0;
   
@@ -61,7 +63,7 @@ h4 {
   
   .sidebar {
      
-    
+    background: transparent url(images/snow.webp);
 	margin-left: 600px; 
 	position: absolute; 
 	top: 0; 
@@ -80,22 +82,22 @@ h4 {
 
 
   .sidebar div.design-selection{
-    background: transparent url(images/sidebardesign.jpg) center/cover;
+    
     
   }
 
   .sidebar div.design-archives{
-    background: transparent url(images/sidebararchive.jpg) center/cover;
+    
     
   }
 
   .sidebar div.zen-resources{
-    background: transparent url(images/zenresources.jpg) center/cover;
+    
     
   }
 
   .sidebar a.design-name {
-    display:none;
+    
     
   }
   
