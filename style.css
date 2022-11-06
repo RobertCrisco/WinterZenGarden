@@ -29,7 +29,7 @@ a:hover, a:focus {
 
 h1 {
   background: #d0ced0;
-  color: #6693aa;
+  color: #483d8B;
   display: inline-block;
   font-weight: normal;
   font-size: 3.2 em;
@@ -41,7 +41,7 @@ h1 {
 h2 {
   display: block;
   position: relative;
-  color: #6693aa;
+  color: #483d8B;
   font-size: 3.5em;
   letter-spacing: 1px;
   line-height: 1em;
@@ -51,7 +51,7 @@ h2 {
 h3 {
   font-size: 1.8em;
   letter-spacing: 1px;
-  color: #6693aa;
+  color: #483d8B;
   line-height: 1em;
   padding: 1em 0 0.5em 0;
 }
@@ -79,12 +79,27 @@ h4 {
     position: absolute;
     top: 0;
     right: 0;
+    width: 25%;
   }
   .design-selection li, .zen-resources li {
     margin: 0;
     display: block;
     padding: 0.5em 10%;
     text-decoration: none;
+  }
+  .wrapper .design-selection .design-name {
+    display: block;
+    margin-right: 40px;
+    width: 50%;
+  }
+  .sidebar a.design-name {
+    color: #483d8B;
+  }
+  .sidebar a.designer-name {
+    color: #000;
+  }
+  .sidebar h3 {
+    padding-left: 5%;
   }
   .sidebar ul {
     list-style-type: none;
@@ -101,51 +116,20 @@ h4 {
   position: relative;
 }
 
-.intro:before, .intro:after {
+.sidebar:before, .sidebar:after {
   content: "";
   position: fixed;
   top: -3000%;
-  bottom: 0;
+  bottom: 50%;
   right: 0;
-  left: 0;
+  left: 75%;
   background-color: rgba(0, 0, 0, 0.01);
   background-image: url(images/snow1.png);
-  background-size: 30%;
+  background-size: 50%;
   -webkit-animation-name: MOVE-BG;
   -webkit-animation-duration: 500s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
-}
-
-body:before {
-  filter: blur(6px);
-  opacity: 0.8;
-}
-body:after {
-  filter: blur(1px);
-  top: -1500%;
-  background-image: url(images/snow1.png);
-  background-size: 90%;
-  -webkit-animation-duration: 200s;
-          animation-duration: 200s;
-}
-
-.more-snow:before {
-  filter: blur(4px);
-  opacity: 0.8;
-  top: -2500%;
-  background-size: 60%;
-  -webkit-animation-duration: 400s;
-          animation-duration: 400s;
-}
-.more-snow:after {
-  filter: blur(2px);
-  opacity: 0.8;
-  top: -2000%;
-  background-image: url(images/snow2.png);
-  background-size: 70%;
-  -webkit-animation-duration: 300s;
-          animation-duration: 300s;
 }
 
 @-webkit-keyframes MOVE-BG {
@@ -156,32 +140,33 @@ body:after {
     transform: translateY(70%);
   }
 }
-.intro {
-  width: auto;
-}
-
 header h1 {
   background: transparent url(images/snow.webp);
   display: block;
   width: 300px;
 }
 
+header h2 {
+  background-image: url(images/banner.png);
+}
+
 header {
   padding-top: 20px;
+  height: 200px;
 }
 
 .summary {
-  width: 80%;
+  width: 75%;
   margin: 1 auto;
 }
 
 .preamble {
-  width: 80%;
+  width: 75%;
   margin: 1 auto;
 }
 
 .main {
-  width: 80%;
+  width: 75%;
 }
 
 footer {

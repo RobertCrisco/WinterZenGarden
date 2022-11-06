@@ -8,7 +8,7 @@
 // To use an mixin from the atoms.scss file use the format:  @include atoms.mixinname;
 
 h1 {
-  background: $color-dkgrey;
+  background: $color-darkgrey;
   color: $color-deepblue;
   display: inline-block;
   font-weight: normal;
@@ -68,6 +68,7 @@ h4 {
 	position: absolute; 
 	top: 0; 
 	right: 0;
+  width: 25%;
 	}
 
 
@@ -81,9 +82,11 @@ h4 {
   }
 
 
-  .sidebar div.design-selection{
+  .wrapper .design-selection .design-name{
     
-    
+    display: block;
+    margin-right: 40px;
+    width: 50%;
   }
 
   .sidebar div.design-archives{
@@ -97,8 +100,16 @@ h4 {
   }
 
   .sidebar a.design-name {
-    
-    
+    color:$color-deepblue;
+  
+  }
+
+  .sidebar a.designer-name {
+    color:$color-black;
+  }
+
+  .sidebar h3 {
+    padding-left: 5%;
   }
   
 
