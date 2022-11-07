@@ -10,58 +10,28 @@
 	}
 
 
-
-  .sidebar{
-    &:before,
-    &:after {
-      content: "";
-      position: fixed;
-      top: -3000%;
-      bottom: 50%;
-      right: 0;
-      left: 75%;
-      background-color: rgba(black, 0.01);
-      background-image: url(images/snow1.png);
-      background-size: 50%;
-      -webkit-animation-name: MOVE-BG;
-      -webkit-animation-duration: 500s;
-      -webkit-animation-timing-function: linear;
-      -webkit-animation-iteration-count: infinite;
-    }
-  }
-  
-  
-  
-  @-webkit-keyframes MOVE-BG {
-    from {
-      transform: translateY(0);
-    }
-    to {
-      transform: translateY(70%);
-    }
-  }
+.intro {
+  background-image: url(images/intro.png);
+}
+ 
 
 
 
-
-header h1 { 
+header h1, header h2 { 
 	
-  display: block;
-  width: 300px;
-
-
-		}
-
-header h2 {
-  
-  
+  display: none
 }
 
+
+
 header {
-  background-image: url(images/header.png);
-	padding-top: 20px; 
   
-  height: 200px;
+  background-image: url(images/header.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  padding-top: 20px; 
+  
+  height: 300px;
 	
   
 }

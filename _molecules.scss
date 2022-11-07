@@ -125,6 +125,37 @@ h4 {
     
 
   }
+  
+
+  .sidebar{
+    &:before,
+    &:after {
+      content: "";
+      position: fixed;
+      top: -3000%;
+      bottom: 50%;
+      right: 0;
+      left: 75%;
+      background-color: rgba(black, 0.01);
+      background-image: url(images/snow1.png);
+      background-size: 50%;
+      -webkit-animation-name: MOVE-BG;
+      -webkit-animation-duration: 500s;
+      -webkit-animation-timing-function: linear;
+      -webkit-animation-iteration-count: infinite;
+    }
+  }
+  
+  
+  
+  @-webkit-keyframes MOVE-BG {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(70%);
+    }
+  }
 
 
   

@@ -110,45 +110,49 @@ h4 {
     font-size: large;
     font-style: bold;
   }
+  .sidebar:before, .sidebar:after {
+    content: "";
+    position: fixed;
+    top: -3000%;
+    bottom: 50%;
+    right: 0;
+    left: 75%;
+    background-color: rgba(0, 0, 0, 0.01);
+    background-image: url(images/snow1.png);
+    background-size: 50%;
+    -webkit-animation-name: MOVE-BG;
+    -webkit-animation-duration: 500s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+  }
+  @-webkit-keyframes MOVE-BG {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(70%);
+    }
+  }
 }
 .page-wrapper {
   margin: 0;
   position: relative;
 }
 
-.sidebar:before, .sidebar:after {
-  content: "";
-  position: fixed;
-  top: -3000%;
-  bottom: 50%;
-  right: 0;
-  left: 75%;
-  background-color: rgba(0, 0, 0, 0.01);
-  background-image: url(images/snow1.png);
-  background-size: 50%;
-  -webkit-animation-name: MOVE-BG;
-  -webkit-animation-duration: 500s;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-iteration-count: infinite;
+.intro {
+  background-image: url(images/intro.png);
 }
 
-@-webkit-keyframes MOVE-BG {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(70%);
-  }
-}
-header h1 {
-  display: block;
-  width: 300px;
+header h1, header h2 {
+  display: none;
 }
 
 header {
-  background-image: url(images/banner.png);
+  background-image: url(images/header.png);
+  background-size: 80%;
+  background-repeat: no-repeat;
   padding-top: 20px;
-  height: 200px;
+  height: 300px;
 }
 
 .summary {
