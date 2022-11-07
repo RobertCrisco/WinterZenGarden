@@ -63,7 +63,7 @@ h4 {
   
   .sidebar {
      
-    background: transparent url(images/snow.webp);
+    
 	margin-left: 600px; 
 	position: absolute; 
 	top: 0; 
@@ -71,15 +71,27 @@ h4 {
   width: 25%;
 	}
 
+  .design-selection, .design-archives {
+    background: transparent url(images/wood.png);
+  }
+
+  .design-selection h3, .design-archives h3 {
+    color: $color-white;
+  }
+
+  .design-archives a {
+    color: $color-white;
+    line-height: 2;
+  }
 
   .design-selection li, .zen-resources li{
     margin: 0;
     display: block;
     padding: 0.5em 10%;
-    
     text-decoration: none;
     
   }
+
 
 
   .wrapper .design-selection .design-name{
@@ -100,12 +112,12 @@ h4 {
   }
 
   .sidebar a.design-name {
-    color:$color-deepblue;
+    color:$color-white;
   
   }
 
   .sidebar a.designer-name {
-    color:$color-black;
+    color:$color-darkgrey;
   }
 
   .sidebar h3 {
@@ -127,35 +139,7 @@ h4 {
   }
   
 
-  .sidebar{
-    &:before,
-    &:after {
-      content: "";
-      position: fixed;
-      top: -3000%;
-      bottom: 50%;
-      right: 0;
-      left: 75%;
-      background-color: rgba(black, 0.01);
-      background-image: url(images/snow1.png);
-      background-size: 50%;
-      -webkit-animation-name: MOVE-BG;
-      -webkit-animation-duration: 500s;
-      -webkit-animation-timing-function: linear;
-      -webkit-animation-iteration-count: infinite;
-    }
-  }
   
-  
-  
-  @-webkit-keyframes MOVE-BG {
-    from {
-      transform: translateY(0);
-    }
-    to {
-      transform: translateY(70%);
-    }
-  }
 
 
   

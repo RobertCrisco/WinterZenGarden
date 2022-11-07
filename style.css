@@ -4,6 +4,13 @@ h2 h3 h4 {
   font-family: Helvetica, "Gills Sans", "Trebuchet MS";
 }
 
+abbr {
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 0.01em;
+}
+
 p {
   font-weight: normal;
   font-size: 1em;
@@ -12,6 +19,7 @@ p {
   text-align: justify;
   line-height: 2;
   margin: 0.75em;
+  font-size: 18px;
 }
 
 a {
@@ -25,6 +33,8 @@ a {
 
 a:hover, a:focus {
   text-decoration: underline;
+  -webkit-text-decoration-color: #fff;
+          text-decoration-color: #fff;
 }
 
 h1 {
@@ -74,12 +84,21 @@ h4 {
 
 @media screen and (min-width: 800px) {
   .sidebar {
-    background: transparent url(images/snow.webp);
     margin-left: 600px;
     position: absolute;
     top: 0;
     right: 0;
     width: 25%;
+  }
+  .design-selection, .design-archives {
+    background: transparent url(images/wood.png);
+  }
+  .design-selection h3, .design-archives h3 {
+    color: #fff;
+  }
+  .design-archives a {
+    color: #fff;
+    line-height: 2;
   }
   .design-selection li, .zen-resources li {
     margin: 0;
@@ -93,10 +112,10 @@ h4 {
     width: 50%;
   }
   .sidebar a.design-name {
-    color: #483d8B;
+    color: #fff;
   }
   .sidebar a.designer-name {
-    color: #000;
+    color: #d0ced0;
   }
   .sidebar h3 {
     padding-left: 5%;
@@ -110,29 +129,6 @@ h4 {
     font-size: large;
     font-style: bold;
   }
-  .sidebar:before, .sidebar:after {
-    content: "";
-    position: fixed;
-    top: -3000%;
-    bottom: 50%;
-    right: 0;
-    left: 75%;
-    background-color: rgba(0, 0, 0, 0.01);
-    background-image: url(images/snow1.png);
-    background-size: 50%;
-    -webkit-animation-name: MOVE-BG;
-    -webkit-animation-duration: 500s;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-  }
-  @-webkit-keyframes MOVE-BG {
-    from {
-      transform: translateY(0);
-    }
-    to {
-      transform: translateY(70%);
-    }
-  }
 }
 .page-wrapper {
   margin: 0;
@@ -140,29 +136,56 @@ h4 {
 }
 
 .intro {
-  background-image: url(images/intro.png);
+  background: transparent url(images/intro.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-top: 20px;
 }
 
-header h1, header h2 {
-  display: none;
+header h1 {
+  background: transparent url(images/wood.png);
+  background-repeat: no-repeat;
+  color: #6693aa;
+  font-size: 3.2em;
 }
 
-header {
-  background-image: url(images/header.png);
+header h2 {
+  display: block;
+  color: #fff;
+}
+
+.div header {
+  background: transparent url(images/intro.png);
+  background-image: url(images/intro2bg.png);
   background-size: 80%;
   background-repeat: no-repeat;
   padding-top: 20px;
-  height: 300px;
+  text-align: center;
 }
 
-.summary {
-  width: 75%;
-  margin: 1 auto;
+.summary p, .preamble p {
+  width: 80%;
+  color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.summary h3, .preamble h3 {
+  color: #d0ced0;
 }
 
 .preamble {
-  width: 75%;
-  margin: 1 auto;
+  text-align: left;
+  width: 70%;
+  font-weight: 600;
+  margin-left: 5%;
+  color: #d0ced0;
+}
+
+.supporting h3, .supporting p {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main {

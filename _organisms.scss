@@ -11,43 +11,73 @@
 
 
 .intro {
-  background-image: url(images/intro.png);
+  background: transparent url(images/intro.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-top: 20px; 
 }
- 
 
 
 
-header h1, header h2 { 
+
+header h1 {
+  background: transparent url(images/wood.png);
+  background-repeat: no-repeat;
+  color: $color-mediumblue;
+  font-size: 3.2em;
+}
+header h2 { 
 	
-  display: none
+  
+  display: block;
+  color: $color-white;
 }
 
 
 
-header {
+
+.div header {
   
-  background-image: url(images/header.png);
+  
+  background: transparent url(images/intro.png);
+  background-image: url(images/intro2bg.png);
   background-size: 80%;
   background-repeat: no-repeat;
   padding-top: 20px; 
-  
-  height: 300px;
+  text-align: center;
+ 
 	
   
 }
 
-.summary {
-  width: 75%;
-	margin: 1 auto;
-    
+.summary p, .preamble p {
+  width: 80%;
+  color: $color-white;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
-
-.preamble {
-  width: 75%;
-	margin: 1 auto; 
-    
+.summary h3, .preamble h3 {
+  color: $color-darkgrey;
+  
+  
 }
+
+.preamble  {
+  text-align: left;
+  width: 70%;
+  font-weight: 600;
+  margin-left: 5%;
+  color: $color-darkgrey;
+}
+
+.supporting h3, .supporting p {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 .main {	
   width: 75%;
