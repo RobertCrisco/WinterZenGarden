@@ -141,16 +141,12 @@ h4 {
   }
 }
 header h1 {
-  background: transparent url(images/snow.webp);
   display: block;
   width: 300px;
 }
 
-header h2 {
-  background-image: url(images/banner.png);
-}
-
 header {
+  background-image: url(images/banner.png);
   padding-top: 20px;
   height: 200px;
 }
