@@ -160,9 +160,12 @@ h4 {
 }
 
 header h1 {
-  background: transparent url(images/wood.png);
+   height: 50px;
+  
+  background: transparent url(https://robertcrisco.github.io/WinterZenGarden//images/snowflakebg.png);
   background-repeat: no-repeat;
-  color: #6693aa;
+  background-position: center center;
+  color: $color-black;
   font-size: 3.2em;
 }
 
