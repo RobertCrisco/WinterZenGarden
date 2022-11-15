@@ -109,6 +109,8 @@ h4 {
   }
   .design-selection, .design-archives {
     background: transparent url(images/wood.png);
+    border-radius: 10px 100px / 120px;
+    width: 80%;
   }
   .design-selection h3, .design-archives h3 {
     color: #fff;
