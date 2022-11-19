@@ -21,11 +21,16 @@
 
 
 header h1 {
-  background: transparent url(images/wood.png);
+  height: 50px;
+   
+  background: transparent url(images/snowflakebg.png);
   background-repeat: no-repeat;
-  color: $color-mediumblue;
+  background-position: center center;
+  color: $color-black;
   font-size: 3.2em;
 }
+
+
 header h2 { 
 	
   
@@ -40,7 +45,6 @@ header h2 {
   
   
   background: transparent url(images/intro.png);
-  background-image: url(images/intro2bg.png);
   background-size: 80%;
   background-repeat: no-repeat;
   padding-top: 20px; 

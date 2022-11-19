@@ -18,6 +18,9 @@ h1 {
   border-bottom: none;
 }
 
+
+
+
 h2 {
   display: block;
   position: relative;
@@ -101,15 +104,7 @@ h4 {
     width: 50%;
   }
 
-  .sidebar div.design-archives{
-    
-    
-  }
 
-  .sidebar div.zen-resources{
-    
-    
-  }
 
   .sidebar a.design-name {
     color:$color-white;
@@ -139,8 +134,32 @@ h4 {
   }
   
 
+  h1 {
+
+    
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+  }
   
+  @keyframes spin {
+      from {
+          transform:rotate(0deg);
+      }
+      to {
+          transform:rotate(360deg);
+      }
+  }
 
-
+  header h1 {
+    height: 50px;
+   
+   background: transparent url(images/snowflakebg.png);
+   background-repeat: no-repeat;
+   background-position: center center;
+   color: $color-black;
+   font-size: 3.2em;
+ }
   
 }
