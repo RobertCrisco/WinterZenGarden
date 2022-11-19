@@ -52,17 +52,17 @@ h1 {
   color: #483d8B;
   display: inline-block;
   font-weight: normal;
-  font-size: 3.2 em;
+  font-size: 1em;
   padding: 0.5em 1em;
   text-transform: uppercase;
   border-bottom: none;
 }
 
 h2 {
-  display: block;
+  display: inline-block;
   position: relative;
   color: #483d8B;
-  font-size: 3.5em;
+  font-size: 2.5em;
   letter-spacing: 1px;
   line-height: 1em;
   font-style: italic;
@@ -149,6 +149,9 @@ h4 {
 }
 
 @media screen and (min-width: 800px) {
+  header h2 {
+    font-size: 80px;
+  }
   .sidebar {
     margin-left: 600px;
     position: absolute;
