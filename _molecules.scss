@@ -72,28 +72,14 @@ h4 {
   font-weight:600;
   }
 
-
-
-@media screen and (min-width: 800px) {
-  
-  .sidebar {
-     
-    
-	margin-left: 600px; 
-	position: absolute; 
-	top: 0; 
-	right: 0;
-  width: 25%;
-	}
+  .design-selection h3, .design-archives h3 {
+    color: $color-white;
+  }
 
   .design-selection, .design-archives {
     background: transparent url(images/wood.png);
     border-radius: 10px 100px / 120px;
     width:80%;
-  }
-
-  .design-selection h3, .design-archives h3 {
-    color: $color-white;
   }
 
   .design-archives a {
@@ -109,8 +95,42 @@ h4 {
     
   }
 
+  .sidebar a.design-name {
+    color:$color-white;
+  
+  }
+
+  .sidebar a.designer-name {
+    color:$color-darkgrey;
+  }
 
 
+  .zen-resources {
+    background-color: $color-lighttgrey;
+    width: 80%;
+    border-radius: 0 25px 0 25px ;
+  }
+
+
+
+
+
+@media screen and (min-width: 800px) {
+
+
+
+  
+
+  .sidebar {
+     
+    margin-left: 600px; 
+	  position: absolute; 
+	  top: 0; 
+	  right: 0;
+    width: 25%;
+	}
+
+ 
   .wrapper .design-selection .design-name{
     
     display: block;
@@ -120,14 +140,7 @@ h4 {
 
 
 
-  .sidebar a.design-name {
-    color:$color-white;
   
-  }
-
-  .sidebar a.designer-name {
-    color:$color-darkgrey;
-  }
 
   .sidebar h3 {
     padding-left: 5%;
@@ -138,6 +151,7 @@ h4 {
     list-style-type: none;
     font-style: bold;
     font-weight:600;
+    font-size: 16px;
     }
 
   .sidebar li a:link, .sidebar li a:visited{
@@ -187,7 +201,7 @@ h4 {
 }
 
 footer a {
-    text-decoration: none;
+    
     color: transparent;
     padding: 25px;
     background-position: center;
@@ -218,5 +232,7 @@ footer a.zen-accessibility {
 footer a.zen-github {
   background-image: url(images/github.png);
 }
+
+
   
 }
