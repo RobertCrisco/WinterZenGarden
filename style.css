@@ -38,7 +38,6 @@ a:hover, a:focus {
 }
 
 h1 {
-  border-radius: 10px 100px / 120px;
   background: #d0ced0;
   color: #483d8B;
   display: inline-block;
@@ -47,22 +46,7 @@ h1 {
   padding: 0.5em 1em;
   text-transform: uppercase;
   border-bottom: none;
-  
-  animation-name: spin;
-  animation-duration: 5000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; 
 }
-
-@keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
-}
-
 
 h2 {
   display: block;
@@ -95,12 +79,22 @@ h4 {
 
 .summary {
   text-align: center;
+  width: 80%;
   padding: 1em 1em 1em 1em;
+}
+
+.design-selection li, .zen-resources li {
+  text-decoration: none;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  font-style: bold;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 800px) {
   .sidebar {
-    border-radius: 10px 100px / 120px;
     margin-left: 600px;
     position: absolute;
     top: 0;
@@ -109,7 +103,7 @@ h4 {
   }
   .design-selection, .design-archives {
     background: transparent url(images/wood.png);
-    border-radius: 10px 100px / 120px;
+    border-radius: 10px 100px/120px;
     width: 80%;
   }
   .design-selection h3, .design-archives h3 {
@@ -123,7 +117,6 @@ h4 {
     margin: 0;
     display: block;
     padding: 0.5em 10%;
-    text-decoration: none;
   }
   .wrapper .design-selection .design-name {
     display: block;
@@ -182,9 +175,40 @@ h4 {
     color: #000;
     font-size: 3.2em;
   }
+  footer {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+  }
+  footer a {
+    text-decoration: none;
+    color: transparent;
+    padding: 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  footer a.zen-validate-html {
+    background-image: url(images/html-5.png);
+  }
+  footer a.zen-validate-css {
+    background-image: url(images/css-3.png);
+  }
+  footer a.zen-license {
+    background-image: url(images/cc.png);
+  }
+  footer a.zen-accessibility {
+    background-image: url(images/info.png);
+  }
+  footer a.zen-github {
+    background-image: url(images/github.png);
+  }
 }
+.body {
+  margin: auto;
+}
+
 .page-wrapper {
-  margin: 0;
+  margin: auto;
   position: relative;
 }
 
@@ -250,38 +274,15 @@ header h2 {
 }
 
 footer {
-  display: flex;
-  justify-content: flex-end;
-  width: 50%;
-  background: transparent url(images/wood.png);
+  text-align: center;
 }
 
-footer a {
-  text-decoration: none;
-  color: transparent;
-  padding: 25px;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-footer a.zen-validate-html {
-  background-image: url(images/html-5.png);
-}
-
-footer a.zen-validate-css {
-  background-image: url(images/css-3.png);
-}
-
-footer a.zen-license {
-  background-image: url(images/cc.png);
-}
-
-footer a.zen-accessibility {
-  background-image: url(images/info.png);
-}
-
-footer a.zen-github {
-  background-image: url(images/github.png);
+.sidebar .wrapper {
+  margin: auto;
+  text-align: center;
+  font-size: medium;
+  position: relative;
+  width: 70%;
 }
 
 html {
