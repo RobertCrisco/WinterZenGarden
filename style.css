@@ -159,7 +159,7 @@ h4 {
   .wrapper .design-selection .design-name {
     display: block;
     margin-right: 40px;
-    width: 50%;
+    width: 90%;
   }
   .sidebar h3 {
     padding-left: 5%;
@@ -221,18 +221,23 @@ h4 {
   }
   footer a.zen-validate-html {
     background-image: url(images/html-5.png);
+    text-decoration: none;
   }
   footer a.zen-validate-css {
     background-image: url(images/css-3.png);
+    text-decoration: none;
   }
   footer a.zen-license {
     background-image: url(images/cc.png);
+    text-decoration: none;
   }
   footer a.zen-accessibility {
     background-image: url(images/info.png);
+    text-decoration: none;
   }
   footer a.zen-github {
     background-image: url(images/github.png);
+    text-decoration: none;
   }
 }
 .body {
