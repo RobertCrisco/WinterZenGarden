@@ -196,10 +196,10 @@ header h2 {
 }
 
 footer {
-  text-align: center;
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  justify-content: flex-end;
+  width: 50%;
+  background: transparent url(images/wood.png);
 }
 
 footer a {
