@@ -12,7 +12,7 @@ abbr {
 
 p {
   font-weight: normal;
-  font-size: 0.75em;
+  font-size: 1em;
   line-height: normal;
   font-family: "Didot", "Bodoni MT", "Palatino";
   word-wrap: break-word;
@@ -28,7 +28,7 @@ p {
 
 a {
   font-weight: normal;
-  font-size: 0.75em;
+  font-size: 1em;
   line-height: normal;
   font-family: "Didot", "Bodoni MT", "Palatino";
   word-wrap: break-word;
@@ -37,7 +37,8 @@ a {
       -ms-hyphens: auto;
           hyphens: auto;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: bolder;
+  font-style: bold;
 }
 
 a:hover, a:focus {
@@ -90,6 +91,16 @@ h4 {
   text-align: center;
   width: 80%;
   padding: 1em 1em 1em 1em;
+}
+
+.summary a {
+  background-color: white;
+}
+
+.summary a:hover, a:focus, .zen-resources a:hover, a:focus {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #000;
+          text-decoration-color: #000;
 }
 
 .design-selection li, .zen-resources li {
