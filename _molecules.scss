@@ -115,7 +115,9 @@ h4 {
 
 
   .zen-resources {
-    background-color: $color-lighttgrey;
+    background: $color-lighttgrey;
+    background: linear-gradient(90deg, rgba(72,61,139,1) 0%, rgba(152,180,203,1) 35%, rgba(234,228,226,1) 100%);
+
     width: 80%;
     border-radius: 0 25px 0 25px ;
   }

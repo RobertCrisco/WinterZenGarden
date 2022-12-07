@@ -77,7 +77,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1 em;
+  font-size: 1em;
   letter-spacing: 1px;
   line-height: 1em;
   margin: 1em 0;
@@ -109,7 +109,6 @@ h4 {
 
 .sidebar ul {
   list-style-type: none;
-  font-style: bold;
   font-weight: 600;
 }
 
@@ -143,7 +142,8 @@ h4 {
 }
 
 .zen-resources {
-  background-color: #eae4e2;
+  background: #eae4e2;
+  background: linear-gradient(90deg, rgb(72, 61, 139) 0%, rgb(152, 180, 203) 35%, rgb(234, 228, 226) 100%);
   width: 80%;
   border-radius: 0 25px 0 25px;
 }
@@ -170,13 +170,11 @@ h4 {
   }
   .sidebar ul {
     list-style-type: none;
-    font-style: bold;
     font-weight: 600;
     font-size: 16px;
   }
   .sidebar li a:link, .sidebar li a:visited {
     font-size: large;
-    font-style: bold;
   }
   h1 {
     -webkit-animation-name: spin;
